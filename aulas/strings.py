@@ -86,3 +86,11 @@ for char in fala:
     print("Letras",lista_de_letras)
     print("Numeros",lista_de_numeros)
     print("Simbolos", lista_de_simbolos)
+
+
+estado_civil = input("Digite seu estado civil(opções possíveis S, C, D, V): ").upper()
+
+while estado_civil not in ["S", "C", "D", "V"]:
+    estado_civil = input("Resposta inválida! Digite seu estado civil(opções possíveis S, C, D, V): ").upper()
+
+    print(f"Estado civil:{estado_civil}")
