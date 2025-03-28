@@ -28,8 +28,7 @@ cadastro_dict["nomes"].append("Joaquim")
 cadastro_dict["idades"].append(26)
 cadastro_dict["cidades"].append("Santo André")
 
-for chave in cadastro:
-    print(cadastro_dict[chave][0])
+cadastro_dict["nomes"]
 
 
 import pandas as pd
