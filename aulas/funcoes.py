@@ -105,5 +105,5 @@ print(resultado4)
 
 #verificar guia de boas práticas: PEP 8 - Style Guide for Python Code 
 
-#PENDENTE - GIT PUSH
+
 
