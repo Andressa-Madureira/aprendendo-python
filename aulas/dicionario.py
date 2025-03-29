@@ -31,8 +31,3 @@ cadastro_dict["cidades"].append("Santo André")
 cadastro_dict["nomes"]
 
 
-import pandas as pd
-
-df = pd.DataFrame(cadastro_dict)
-
-df

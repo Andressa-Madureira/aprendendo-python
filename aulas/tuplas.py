@@ -44,3 +44,4 @@ def valor_valor_quadrado_valor_cubo(x):
   return x, x**2, x**3
 
 valor_valor_quadrado_valor_cubo(2)
+

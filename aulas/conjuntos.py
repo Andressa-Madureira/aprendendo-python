@@ -13,3 +13,4 @@ conjunto
 conjunto.remove(14)
 conjunto
 
+num_1, num_2, num_3 =  (1,2,3)
