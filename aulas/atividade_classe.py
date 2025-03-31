@@ -20,7 +20,7 @@ class Administrador(Usuario):
 
 #Criando os objetos
 
-usuario_comum = Usuario("Andressa", "andressa@email.com")
+usuario_comum = Usuario("Andressa","andressa@email.com")
 influencer_famosa = Influencer("Bruna", "bruna@email.com", 5000)
 moderadora = Administrador("Joana", "joana@email.com")
 
@@ -29,4 +29,4 @@ usuario_comum.postar()
 
 influencer_famosa.postar()
 
-moderadora.banir_usuario("Carlos")
+moderadora.banir_usuario("Paula")

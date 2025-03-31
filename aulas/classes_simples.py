@@ -7,14 +7,14 @@ class Pessoa:
         self.residencia = res
 
 #inicializar alguns atributos cujos valores são fixados
-
+        def fala(self, mensagem):
+            print(f"{self.nome} diz: '{mensagem}'")
         self.num_filhos = 0
         self.profissao = None
 
 #criando um objeto - 
 
-objeto_construtor = Pessoa("Andressa",29, "RJ")
+objeto_construtor = andressa = Pessoa("Andressa",29, "RJ")
+
 
 objeto_construtor.nome
-
-       
