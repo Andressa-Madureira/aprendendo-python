@@ -52,3 +52,38 @@ print(h3)
 print(f"Entrei às {h1}\n Trabalhei por {h2}\n Vou sair às {h3}")
 
 print(h1 > h2)
+
+# Atividade 1:
+
+class A:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y 
+    def __eq__(self, outro):
+        return self.x == outro.x
+
+class B:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y 
+    def __eq__(self, outro):
+        return self.y == outro.y
+
+a = A(x=1, y=2)
+b = B(x=1, y=3)
+print(a==b, b==a)
+
+#Atividade 2:
+
+class Tolerancia:
+    def __init__(self, x, tol_minima=3, tol_maxima=6):
+        self.x = x
+        self.tol_minima = tol_minima
+        self.tol_maxima = tol_maxima
+    def __eq__(self, outro):
+        return abs(self.x - outro.x) <= self.tol_minima
+    def __ne__(self, outro):
+        return abs(self.x - outro.x) >= self.tol_maxima
+a = Tolerancia(x=10)
+b = Tolerancia(x=15)
+print(a==b, a!=b)
