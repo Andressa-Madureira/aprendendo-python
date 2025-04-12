@@ -15,12 +15,22 @@ with open("alunos_stars.csv","w", encoding="utf-8", newline='') as f:
 #Como ler esse arquivo?
 
 with open("alunos_stars.csv", "r", encoding="utf-8" ) as f:
-    aluno = "Luke"
+    aluno = "Han"
     
     tabela_lida = [linha for linha in csv.reader(f,delimiter= ",", lineterminator="\n")]
     
-result = tabela_lida[[linha[0] for linha in tabela_lida].index(aluno)]
+    dados_aluno = tabela_lida[[linha[0] for linha in tabela_lida].index(aluno)]
+
+    notas1 = float(dados_aluno[1])
+    notas2 = float(dados_aluno[2])
+
+    media = (notas1 + notas2) / 2
 
 
-print(result)
+
+print(f"A média do(a) aluno(a) {aluno} é: {media}")
+
+
+
+
 
