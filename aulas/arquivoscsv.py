@@ -15,7 +15,12 @@ with open("alunos_stars.csv","w", encoding="utf-8", newline='') as f:
 #Como ler esse arquivo?
 
 with open("alunos_stars.csv", "r", encoding="utf-8" ) as f:
-    primeira_linha = f.readline()
-
+    aluno = "Luke"
+    
     tabela_lida = [linha for linha in csv.reader(f,delimiter= ",", lineterminator="\n")]
-    print(tabela_lida)
+    
+result = tabela_lida[[linha[0] for linha in tabela_lida].index(aluno)]
+
+
+print(result)
+
