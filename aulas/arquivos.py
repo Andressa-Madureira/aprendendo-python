@@ -24,3 +24,5 @@ with open("ola_mundo.txt", "r", encoding="utf-8") as f:
 
 #conteud.split("\n") pular a linha
 
+
+
